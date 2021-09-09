@@ -18,8 +18,6 @@ class CreateCategoryCook extends Migration
             $table->integer('recipe_id');
             $table->string('name', 80)->unique();
             $table->timestamps();
-
-            // $table->foreignId('recipe_id')->constrained();
         });
     }
 
